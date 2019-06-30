@@ -1,10 +1,19 @@
 const router = require('express').Router();
-const movieController = require('../controllers/movieController.js');
+const {
+  getSearch,
+  getGenres,
+  saveMovie,
+  deleteMovie,
+  getAllMovies
+} = require('../controllers/movieController.js');
 
 //Route different requests to different endpoints
-router.get('/search', movieController.getSearch)
-router.get('/genres', movieController.getGenres)
-router.post('/save', movieController.saveMovie)
-router.delete('/delete', movieController.deleteMovie)
+router.get('/search/:id', getSearch);
+router.get('/genres', getGenres);
+router.get('/retrieve', getAllMovies);
+router.post('/save', saveMovie);
+router.post('/delete', deleteMovie);
 
 module.exports = router;
+
+// {getSearch, getGenres, saveMovie, deleteMovie}
