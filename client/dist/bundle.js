@@ -4392,7 +4392,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! babel-polyfill */"./node_modules/babel-polyfill/lib/index.js");
-module.exports = __webpack_require__(/*! /Users/Jesse/Desktop/Hack Reactor/Immersive/practiceFullStacks/BadMovies3/client/src/index.jsx */"./client/src/index.jsx");
+module.exports = __webpack_require__(/*! /Users/Jesse/Desktop/Coding/Hack Reactor/hrnyc23/practiceFullStacks/BadMovies3/client/src/index.jsx */"./client/src/index.jsx");
 
 
 /***/ })

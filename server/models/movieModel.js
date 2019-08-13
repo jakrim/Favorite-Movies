@@ -64,6 +64,7 @@ module.exports = {
   },
 
   deleted: favorite => {
+    console.log(favorite);
     return movie.deleteOne({ title: favorite });
   }
 };
