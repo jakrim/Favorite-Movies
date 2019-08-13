@@ -31,6 +31,7 @@ class Movies extends React.Component {
                 this.saveOrDelete(movie);
               }}
             >
+              {/* Adding Comment */}
               <img
                 src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
               />
