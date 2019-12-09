@@ -1,10 +1,12 @@
 # Bad Movies
 
+The original project is for bad movies.. I decided it was more interesting looking at good movies than bad movies. So I adjusted the API data to return the top movies. It's a really cool full stack app that includes rendering a user's favorite movies from a database with some basic web functionality.
+
 A student-made teaching tool designed to cover the fundamentals of fullstack
 
 Learn the fundamentals of application structure and database integration by making a web app that renders the most horrible movies as listed on 'themoviedb.org' based on certain search criteria, namely genre. The user should be able to save a movie to their 'favorites' list and delete movies from this list.
 
-### Basic functionality: 
+### Basic functionality:
 
 [ ] User should be able to search for the worst movies from any of the official genres listed on 'themoviedb.org'
 
@@ -22,6 +24,6 @@ Learn the fundamentals of application structure and database integration by maki
 
 https://developers.themoviedb.org/3/getting-started/introduction
 
---------
+---
 
-*To start the server and start webpack check out package.json*
+_To start the server and start webpack check out package.json_
