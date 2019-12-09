@@ -10,14 +10,14 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: DIST_DIR
-  }, 
+  },
   module: {
     rules: [
       {
         test: [/\.js$/, /\.jsx?$/],
         loader: 'babel-loader',
         exclude: /node_modules/,
-        options: { 
+        options: {
           presets: ['env', 'react', 'stage-0']
         }
       }
