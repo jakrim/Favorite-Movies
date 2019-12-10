@@ -18,9 +18,9 @@ class Search extends React.Component {
     // this.props.getSavedMovies(this.state.currentGenreId);
   }
 
-  getGenres() async() {
+  getGenres() {
     //make an axios request in this component to get the list of genres from your endpoint GET GENRES
-    await axios
+    axios
       .get('/movies/genres')
       .then(({ data }) => {
         this.setState({
