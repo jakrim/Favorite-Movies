@@ -1,13 +1,31 @@
 import React from 'react';
 import axios from 'axios';
 
-
-
 class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      genres: [],
+      genres: [
+        'Action',
+        'Adventure',
+        'Animation',
+        'Comedy',
+        'Crime',
+        'Documentary',
+        'Drama',
+        'Family',
+        'Fantasy',
+        'History',
+        'Horror',
+        'Music',
+        'Mystery',
+        'Romance',
+        'Science Fiction',
+        'TV Movie',
+        'Thriller',
+        'War',
+        'Western'
+      ],
       currentGenre: ''
     };
     this.getGenres = this.getGenres.bind(this);
