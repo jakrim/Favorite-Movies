@@ -55,13 +55,15 @@ class Search extends React.Component {
         <br />
         <br />
         <select onChange={this.handleSelection}>
-          {this.state.genres.map(genre => {
-            return (
-              <option value={genre.id} key={genre.id}>
-                {genre.name}
-              </option>
-            );
-          })}
+          {if (this.state.genres.map) {
+            this.state.genres.map(genre => {
+              return (
+                <option value={genre.id} key={genre.id}>
+                  {genre.name}
+                </option>
+              );
+            })
+          }}
         </select>
         <br />
         <br />
