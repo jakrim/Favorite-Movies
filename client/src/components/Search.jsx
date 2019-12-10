@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
+
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -55,15 +57,13 @@ class Search extends React.Component {
         <br />
         <br />
         <select onChange={this.handleSelection}>
-          {if (this.state.genres.map) {
-            this.state.genres.map(genre => {
-              return (
-                <option value={genre.id} key={genre.id}>
-                  {genre.name}
-                </option>
-              );
-            })
-          }}
+          {this.state.genres.map(genre => {
+            return (
+              <option value={genre.id} key={genre.id}>
+                {genre.name}
+              </option>
+            );
+          })}
         </select>
         <br />
         <br />
