@@ -59,7 +59,6 @@ class Search extends React.Component {
   handleClick(event) {
     event.preventDefault();
     this.props.getMovies(this.state.currentGenre);
-    console.log(this.state.currentGenre);
   }
 
   render() {
@@ -77,7 +76,7 @@ class Search extends React.Component {
         <select onChange={this.handleSelection}>
           {this.state.genres.map(genre => {
             return (
-              <option value={genre.id} key={genre.id}>
+              <option value={genre.name} key={genre.name}>
                 {genre.name}
               </option>
             );
