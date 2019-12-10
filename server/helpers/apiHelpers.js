@@ -15,7 +15,7 @@ module.exports = {
   getMovieData: id => {
     return axios
       .get(
-        `//api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=${id}`
+        `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=${id}`
       )
       .then(data => {
         return data;
@@ -28,7 +28,7 @@ module.exports = {
   getGenreData: id => {
     return axios
       .get(
-        `//api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`
+        `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`
       )
       .then(data => {
         return data;
