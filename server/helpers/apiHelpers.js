@@ -25,7 +25,7 @@ module.exports = {
       });
   },
 
-  getGenreData: id => {
+  getGenreData: () => {
     return axios
       .get(
         `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`
