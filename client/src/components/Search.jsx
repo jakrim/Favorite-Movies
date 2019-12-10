@@ -28,29 +28,29 @@ class Search extends React.Component {
       ],
       currentGenre: ''
     };
-    // this.getGenres = this.getGenres.bind(this);
+    this.getGenres = this.getGenres.bind(this);
     this.handleSelection = this.handleSelection.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
-    // this.getGenres();
+    this.getGenres();
     // this.props.getSavedMovies(this.state.currentGenreId);
   }
 
-  // getGenres() {
-  //   //make an axios request in this component to get the list of genres from your endpoint GET GENRES
-  //   axios
-  //     .get('/movies/genres')
-  //     .then(({ data }) => {
-  //       this.setState({
-  //         genres: data.genres
-  //       });
-  //     })
-  //     .catch(err => {
-  //       console.log('ERROR IN SEARCH.JS', err);
-  //     });
-  // }
+  getGenres() {
+    //make an axios request in this component to get the list of genres from your endpoint GET GENRES
+    axios
+      .get('/movies/genres')
+      .then(({ data }) => {
+        this.setState({
+          genres: data.genres
+        });
+      })
+      .catch(err => {
+        console.log('ERROR IN SEARCH.JS', err);
+      });
+  }
 
   handleSelection(event) {
     this.setState({ currentGenre: event.target.value });
@@ -59,6 +59,7 @@ class Search extends React.Component {
   handleClick(event) {
     event.preventDefault();
     this.props.getMovies(this.state.currentGenre);
+    console.log(this.state.currentGenre);
   }
 
   render() {
@@ -76,7 +77,7 @@ class Search extends React.Component {
         <select onChange={this.handleSelection}>
           {this.state.genres.map(genre => {
             return (
-              <option value={genre.name} key={genre.name}>
+              <option value={genre.id} key={genre.id}>
                 {genre.name}
               </option>
             );
