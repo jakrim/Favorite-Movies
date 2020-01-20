@@ -1,7 +1,7 @@
 {
-  "name": "badmovies",
+  "name": "goodmovies",
   "version": "1.0.0",
-  "description": "bad movies practice for junior developers",
+  "description": "good movies practice for full stack development",
   "main": "index.js",
   "scripts": {
     "react-dev": "webpack -d --watch",
@@ -9,7 +9,7 @@
     "build": "webpack --p",
     "start": "webpack-dev-server --progress --colors"
   },
-  "author": "Peter Park",
+  "author": "Jesse Krim",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.23.3",
